@@ -246,6 +246,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 61187188284764532, guid: 834e019eb3366da4093e8721abe2ca8e,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 834e019eb3366da4093e8721abe2ca8e, type: 2}
   m_IsPrefabParent: 0
@@ -572,11 +577,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4043067632123376, guid: cde5ab8a06c920941b77fa990f675e9c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2.01
+      value: 1.74
       objectReference: {fileID: 0}
     - target: {fileID: 4043067632123376, guid: cde5ab8a06c920941b77fa990f675e9c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.43
+      value: 5.59
       objectReference: {fileID: 0}
     - target: {fileID: 4043067632123376, guid: cde5ab8a06c920941b77fa990f675e9c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -838,6 +843,46 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 62d416cba6083c145a085df80ae94bb5, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1758737455 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1826903749870104, guid: cde5ab8a06c920941b77fa990f675e9c,
+    type: 2}
+  m_PrefabInternal: {fileID: 878909242}
+--- !u!114 &1758737456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1758737455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f8d3df6bee35274997671c69c248175, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlatformMask:
+    serializedVersion: 2
+    m_Bits: 256
+  DefaultParameters:
+    MaxVelocity: {x: 3.4028235e+38, y: 3.4028235e+38}
+    SlopeLimit: 30
+    Gravity: -25
+    JumpRestrictions: 0
+    JumpFrequency: 0.25
+    JumpMagnitude: 12
+--- !u!114 &1758737457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1758737455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8ec56afaec89c4186ba12f24e09e7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxSpeed: 8
+  SpeedAccelerationOnGround: 10
+  SpeedAccelerationAir: 5
 --- !u!1 &1816565857
 GameObject:
   m_ObjectHideFlags: 0

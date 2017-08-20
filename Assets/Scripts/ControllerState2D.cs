@@ -8,16 +8,16 @@ public class ControllerState2D  {
     public bool IsCollidingLeft { get; set; }
     public bool IsCollidingAbove { get; set; }
     public bool IsCollidingBelow { get; set; }
-    public bool isMovingDownSlope { get; set; }
+    public bool IsMovingDownSlope { get; set; }
     public bool IsMovingUpSlope { get; set; }
     public bool IsGrounded { get { return IsCollidingBelow; } }
     public float SlopeAngle { get; set; }
 
     public bool HasCollisions { get { return IsCollidingRight || IsCollidingLeft || IsCollidingAbove || IsCollidingBelow; } }
 
-    public void reset()
+    public void Reset()
     {
-        isMovingDownSlope =
+        IsMovingDownSlope =
             IsMovingUpSlope =
             IsCollidingRight =
             IsCollidingLeft =
@@ -31,6 +31,6 @@ public class ControllerState2D  {
     {
         return string.Format(
             "(controller: r:{0} 1:{1} a={2} b:{3} down-slope:{4} up-slope:{5} angle:{6})"
-            , IsCollidingRight, IsCollidingLeft, IsCollidingAbove, IsCollidingBelow, isMovingDownSlope, IsMovingUpSlope, SlopeAngle);
+            , IsCollidingRight, IsCollidingLeft, IsCollidingAbove, IsCollidingBelow, IsMovingDownSlope, IsMovingUpSlope, SlopeAngle);
     }
 }

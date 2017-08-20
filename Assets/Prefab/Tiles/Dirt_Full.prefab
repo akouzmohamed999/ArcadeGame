@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4677615449814136}
   - component: {fileID: 212673394727080134}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dirt_Full
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4384592312833842}
   - component: {fileID: 61701046328582118}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dirt_Full
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,7 +50,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1582833931327072}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.959238, y: -23.062035, z: 0}
+  m_LocalPosition: {x: -0.06714058, y: -0.02084732, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4677615449814136}

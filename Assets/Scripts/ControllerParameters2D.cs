@@ -1,15 +1,14 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 [Serializable]
-public class ControllerParameters2D  {
-
+public class ControllerParameters2D
+{
     public enum JumpBehavior
     {
         CanJumpOnGround,
-        CanJumpAnyWhere,
+        CanJumpAnywhere,
         CantJump
     }
 
@@ -20,7 +19,9 @@ public class ControllerParameters2D  {
 
     public float Gravity = -25f;
 
-    public JumpBehavior JumpRestrections;
+    public JumpBehavior JumpRestrictions;
 
     public float JumpFrequency = .25f;
+
+    public float JumpMagnitude = 12;
 }
